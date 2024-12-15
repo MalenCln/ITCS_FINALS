@@ -1,3 +1,5 @@
+
+
 def act1():
     print("Hello world")
 
@@ -267,3 +269,39 @@ def act24():
 
 def act25():
     pass
+
+def main():
+
+    tuloy = True
+    while tuloy == True:
+        print("0 - exit")
+        print("1 - activity1")
+
+        x = input("enter a coms: ")
+        if x == "exit" or x == "0":
+            break
+            tuloy == False
+        else:
+            if x == "1":
+                act1()
+                continue
+            elif x == "2":
+                act2()
+                continue
+            elif x == "3":
+                act3()
+                continue
+            elif x == "4":
+                act4()
+                continue
+            elif x == "5":
+                act5()
+                continue
+            elif x == "6":
+                act6()
+                continue
+            elif x == "7":
+                act7()
+                continue
+        
+main()
