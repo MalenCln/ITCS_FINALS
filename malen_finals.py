@@ -1,5 +1,3 @@
-
-
 def act1():
     print("Hello world")
 
@@ -274,6 +272,7 @@ def main():
 
     tuloy = True
     while tuloy == True:
+        print("Welcome to my Finals Program")
         print("0 - exit")
         print("1 - activity1")
 
@@ -303,5 +302,59 @@ def main():
             elif x == "7":
                 act7()
                 continue
-        
+            elif x == "8":
+                act8()
+                continue
+            elif x == "9":
+                act9()
+                continue
+            elif x == "10":
+                act10()
+                continue
+            elif x == "11":
+                act11()
+                continue
+            elif x == "12":
+                act12()
+                continue
+            elif x == "13":
+                act13()
+                continue
+            elif x == "14":
+                act14()
+                continue
+            elif x == "15":
+                act15()
+                continue
+            elif x == "16":
+                act16()
+                continue
+            elif x == "17":
+                act17()
+                continue
+            elif x == "18":
+                act18()
+                continue
+            elif x == "19":
+                act19()
+                continue
+            elif x == "20":
+                act20()
+                continue
+            elif x == "21":
+                act21()
+                continue
+            elif x == "22":
+                act22()
+                continue
+            elif x == "23":
+                act23()
+                continue
+            elif x == "24":
+                act24()
+                continue
+            elif x == "25":
+                act25()
+                continue       
 main()
+
