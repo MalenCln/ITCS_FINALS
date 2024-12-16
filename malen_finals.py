@@ -260,22 +260,442 @@ def act22():
             break
 
 def act23():
-    pass
+    def factorial(number):
+        fact = 1
+        for x in range(number, 0, -1):
+            fact *= x
+
+        return fact
+
+    print(f"The factorial of 5 is {factorial(5)}")
 
 def act24():
-    pass
+    from activity23_sample import factorial
+
+    print(f"the factorial of 7 is {factorial(7)} ")
 
 def act25():
-    pass
+    courses = ["BSIT", "BSA", "BSAIS", "BTVTED", "BSSW", "BSPA", "Delete w/o index", "Delete with index"]
+
+    courses.remove("Delete w/o index")
+    courses.pop()
+    courses.append("DHRS")
+    courses.insert(0, "ABELS")
+
+    print(courses)
+
+def code_challenge1():
+    print ("\t\t\t\t\t\t\t\t\t   * \n\t\t\t\t\t\t\t\t\t  *** \n\t\t\t\t\t\t\t\t\t ***** \n\t\t\t\t\t\t\t\t\t******* \n\t\t\t\t\t\t\t\t\t ***** \n\t\t\t\t\t\t\t\t\t  *** \n\t\t\t\t\t\t\t\t\t   *")
+
+def code_challenge2():
+    name = input("Please enter a name -----> ")
+
+    print("Hi", name)
+    print("\n\n\t\t\t\t\t\t\t\t\t\t\t*\n\t\t\t\t\t\t\t\t\t\t*\t*\t*\n\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\n\t\t\t\t\t\t\t\t*\t\t    ","Hi", name,"\t\t\t*\t\n\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\n\t\t\t\t\t\t\t\t\t\t*\t*\t*\n\t\t\t\t\t\t\t\t\t\t\t*\n\n")
+
+def code_challenge3():
+    fullname = input("Please input your full name : ")
+    gender = input("Input your Gender : ")
+    age = input("Input your Age : ")
+    status = input("Input your Status : ")
+    BirthMonth = input("Input your Birth Month : ")
+    BirthDay = input("Input your Birth Day : ")
+    BirthYear = input("Input your Birth Year : ")
+    religion = input("Input your Religion : ")
+    nationality = input("Input your Nationality : ")
+    fname = input("Input your Father's Name : ")
+    mname = input("Input your Mother's Name : ")
+    EmailAddress = input("Input your Email Address : ")
+    address = input("Input your Address : ")
+
+    print("\nHi, My name is",fullname,"\b, an",age,"year old",gender,"\b,",status,"\b, born on",BirthMonth, BirthDay, BirthYear,"\b, living in",address,"\b.\nI am a",nationality,"citizen and a",religion,"\b.\nMy father's name is",fname,"and my mother's name is",mname,"\b.\nYou can reach me through gmail at",EmailAddress)
+
+def code_challenge4():
+    num1 = eval(input("Enter a number ---> "))
+    num2 = eval(input("Enter another number ---> "))
+    sum = num1 + num2
+    diff = num1 - num2
+    prod = num1 * num2
+    quo =  num1 / num2
+    expo = num1 ** num2
+    rem = num1 % num2
+    floordiv = num1 // num2
+
+    print("The sum of" , num1 , "and" , num2 , "is" ,sum)
+    print("The difference of" , num1 , "and" , num2 , "is" ,diff)
+    print("The product of" , num1 , "and" , num2 , "is" ,prod)
+    print("The quotient of" , num1 , "and" , num2 , "is",quo)
+    print("The exponent of", num1, "and", num2, "is" ,expo)
+    print("The reminder of" , num1 , "and" , num2 , "is" ,rem)
+    print("The floor division of" , num1 , "and" , num2 , "is" ,floordiv)
+
+def code_challenge5():
+    pera = eval(input("Enter amount to deposit ---> "))
+    name = input("Enter your name: ")
+
+    libo = pera // 1000
+    lsukli = pera % 1000
+    fh = lsukli // 500
+    fhsukli = lsukli % 500
+    th = fhsukli//200
+    thsukli = fhsukli % 200
+    oh = thsukli//100
+    ohsukli = thsukli % 100
+    fif = ohsukli//50
+    fifsukli = ohsukli % 50
+    tw = fifsukli//20
+    twsukli = fifsukli % 20
+    t = twsukli//10
+    tsukli = twsukli % 10
+    f = tsukli//5
+    fsukli = tsukli % 5
+    o = fsukli//1
+    osukli = fsukli % 1
+
+    print(f"Hi {name} the breakdown of your deposit is")
+    print(libo, " - 1000")
+    print(fh, " - 500")
+    print(th, " - 200")
+    print(oh," - 100")
+    print(fif," - 50")
+    print(tw," - 20")
+    print(t," - 10")
+    print(f," - 5")
+    print(o," - 1")
+
+def code_challenge6():
+    prelims = eval(input("Enter your Prelims score: "))
+    midterm = eval(input("Enter your Midterm score: "))
+    semi = eval(input("Enter your Semifinal score: "))
+    final  = eval(input("Enter your Finals score: "))
+    quiz = eval(input("Enter your Quiz scores: "))
+    project = eval(input("Enter your Project scores: "))
+
+    FG = (prelims * 0.15) + (midterm * 0.15) + (semi * 0.15) + (final * 0.15) + (quiz * 0.25) + (project * 0.15)
+    print("Your Final Grades is", round(FG, 2))
+
+
+    if 65 <= FG <= 100:
+        print("You've passed")
+        print("great job!")
+    elif FG >= 64:
+        print("Failed")
+        print("Better luck next time")
+    else:
+        print("Invalid grades")
+
+def code_challenge7():
+    name = input("Enter your name: ")
+    age = input("Enter your age: ")
+    gro = input("Do you want to buy? (yes or no): ")
+    if gro.lower() == "yes":
+        print("\nHERE IS THE LIST OF OUR PRODUCTS: \n\tEggs - ₱220 \n\tChicken Meat - ₱200 \n\tRice - ₱190 \n\tButter - ₱55 \n\tMilk - ₱165 \n\tBread - ₱90 \n\tCereal - ₱192")
+        item = input("What item would you like to buy? ")
+        price = input("Input the price of the item: ")
+        amount = input("Enter the amount you'd like to pay: ")
+
+        if age >= 60:
+            taxed = price + (price * 0.123)
+            total = taxed
+            change = amount - total
+            disc = taxed * 0.052
+            total_disc = total - disc
+            change = amount - total_disc 
+            print("You can have senior discount of 5.2% from the total price." )
+
+        elif age < 60:
+            print
+
+    else:
+        print("Thanks for stopping buy!")
+
+def code_challenge8():
+    x = 0
+    odd = 0
+    even = 0
+    for fm in range (1,11):
+        num = eval(input(f"Input #{fm}: "))
+        x += num
+        if num % 2 == 0:
+            even += num
+        else:
+            odd += num
+
+    print(f"The summation of the numbers is: {x}")
+    print(f"The summation of the even numbers is: {even}")
+    print(f"The summation of the odd numbers is: {odd}")
+
+def code_challenge9():
+    for x in range(0,10):
+        print(" ",end=" ")
+        for y in range(0,x):
+            print(" ",end=" ")
+        for z in range(x,10):
+            print("*",end=" ")
+        print()
+
+def code_challenge10():
+    for x in range(1,6):
+        for y in range(6, x, -1):
+            print(" ", end = " ")
+        for z in range(1, x +1):
+            print("*", end=" ")
+        for a in range(1, x +1):
+            print("*", end =" ")
+        print()
+
+    for x in range(1,6):
+        for y in range(1, x + 1):
+            print(" ", end = " ")
+        for z in range(6, x,-1):
+            print("*", end=" ")
+        for a in range(6, x, -1):
+            print("*", end =" ")
+        print()
+
+def code_challenge11():
+    #arrow up
+    for x in range (1, 5):
+        for y in range(5, x, -1):
+            print(" ", end=" ")
+        for z in range (1, x):
+            print("*", end=" ")
+        for a in range (0, x):
+            print("*", end=" ")
+        print()
+
+    #arrow down
+    for x in range (1, 6):
+        for y in range (1, x):
+            print(" ", end=" ")
+        for z in range (6, x, -1):
+            print("*", end=" ")
+        for a in range (5, x, -1):
+            print("*", end=" ")    
+        print()
+
+def code_challenge12():
+    for x in range (1,6):
+        for y in range(6, x, -1):
+            print(" ", end=" ")
+        for z in range (1, x):
+            print("*", end=" ")
+        for a in range (0, x):
+            print("*", end=" ")
+        print()
+
+    for i in range(6,1-1):
+        for j in range(1,i):
+            print(" ",end=" ")
+        for k in range(7,i -1):
+            print("*",end=" ")
+        for l in range(6,i -1):
+            print("*",end=" ")
+        print()
+
+    for i in range(1,7):
+        for j in range(1,5):
+            print(" ",end=" ")
+        for k in range(1,4):
+            print("*",end=" ")
+        print()
+def code_challenge13():
+    for i in range(1,6):
+        for j in range(6,i,-1):
+            print(" ",end= " " )
+
+        for k in range(i,1,-1):
+            print(k, end= " ")
+
+        for l in range(1,i+1):
+            print(l, end= " ")
+        print()
+
+    for i in range(4,0,-1):
+        for j in range(6,i,-1):
+            print(" ",end= " " )
+
+        for k in range(i,1,-1):
+            print(k, end= " ")
+
+        for l in range(1,i +1):
+            print(l, end= " ")
+        print()
+
+def code_challenge14():
+    cycle = True
+    sum = 0
+
+    while cycle == True:
+        num = eval(input("Enter a number:   "))
+
+        if num == 0:
+            print("Program has been terminated")
+            print(f"The sum of all numbers is {sum}")
+            break
+            
+        else:
+            sum += num
+            continue
+
+def code_challenge15():
+    import os
+    isContinue = True 
+    no = 0
+    while isContinue == True:
+        ask = input("Would you like to add another triangle? (yes/no)---> ")
+        
+        if ask.lower() == "no":
+            os.system("cls")
+            print("Program stopped")
+            break
+            iscontinue = False
+        elif ask.lower() == "yes":
+            os.system("cls")
+            no += 1
+            for x in range(1,6):
+                for r in range(1,no +1):
+                    for y in range(1, x + 1):
+                        print("*", end = " ")
+                    for z in range(5, x, -1):
+                        print(" ", end=" ")
+                print()
+            continue
+
+def code_challenge16():
+    def denomination(amount):
+        print("\nDenomination Breakdown:")
+        A = amount // 1000
+        AA = amount % 1000
+
+        B = AA // 500
+        BB = AA % 500
+
+        C = BB // 200
+        CC = BB % 200
+
+        D = CC // 100
+        DD = CC % 100
+
+        E = DD // 50
+        EE = DD % 50
+
+        F = EE // 20
+        FF = EE % 20
+
+        G = FF // 10
+        GG = FF % 10
+
+        H = GG // 5
+        HH = GG % 5
+
+        I = HH // 1
+
+        print("1000---", A)
+        print("500----", B)
+        print("200----", C)
+        print("100----", D)
+        print("50-----", E)
+        print("20-----", F)
+        print("10-----", G)
+        print("5------", H)
+        print("1------", I)
+
+
+    accounts = {}
+
+    def account():
+        x = input("Enter an account name: ")
+        if x in accounts:
+            print("Account already exists!")
+        else:
+            accounts[x] = 0
+            print(f"Account created successfully for {x}.")
+
+
+    def deposit():
+        x = input("Enter your account name: ")
+        if x in accounts:
+            try:
+                amount = int(input("Enter amount to deposit : "))
+                if amount > 0:
+                    accounts[x] += amount
+                    print(f"Deposited {amount} successfully. New balance: {accounts[x]}")
+                    denomination(amount)
+                else:
+                    print("Amount must be positive!")
+            except ValueError:
+                print("Invalid input! Please enter a whole number.")
+        else:
+            print("Account not found!")
+
+
+    def withdrawal():
+        x = input("Enter your account name: ")
+        if x in accounts:
+            try:
+                amount = int(input("Enter amount to withdraw : "))
+                if 0 < amount <= accounts[x]:
+                    accounts[x] -= amount
+                    print(f"Withdrawn {amount} successfully. Remaining balance: {accounts[x]}")
+                    denomination(amount)
+                else:
+                    print("Insufficient funds or invalid amount!")
+            except ValueError:
+                print("Invalid input! Please enter a whole number.")
+        else:
+            print("Account not found!")
+
+
+    def check_balance():
+        x = input("Enter your username: ")
+        if x in accounts:
+            print(f"Your balance: {accounts[x]}")
+        else:
+            print("Account not found!")
+
+
+    def options():
+        while True:
+            print("\n+++++++++++++++++++++++++++++")
+            print("Welcome to my Simulation Bank")
+            print("+++++++++++++++++++++++++++++")
+            print()
+            print("1. Create Account")
+            print("2. Deposit")
+            print("3. Withdraw")
+            print("4. Check Balance")
+            print("5. Exit")
+            print()
+            y = input("Choose an option: ")
+            print()
+
+            if y == '1':
+                account()
+            elif y == '2':
+                deposit()
+            elif y == '3':
+                withdrawal()
+            elif y == '4':
+                check_balance()
+            elif y == '5' or "Exit":
+                print("Transaction ended ")
+                break
+            else:
+                print("Invalid option. Please try again.")
+
+    options()
 
 def main():
     tuloy = True
     while tuloy == True:
-        print("\n\t\t---------------Welcome to my Finals Program---------------")
-        print("\t\t\t\t0 - exit")
-        print("\t\t\t\t1 - activity1")
+        print("\n\t++++++++++++++ WELCOME TO MY FINALS PROJECT +++++++++++++++++")
+        print("\n\t\t\t\tCODE CONTENT")
+        print("\n\tAct - Activities\t\t\tCC - Code_Challenges")
+        print("\t\t\t\t0 - Exit")
+        print("\n\t++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
-        x = input("Enter a coms: ")
+        x = input("Enter what would you like to open: ")
         if x == "exit" or x == "0":
             break
             tuloy == False
