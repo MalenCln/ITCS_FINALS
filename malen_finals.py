@@ -269,14 +269,13 @@ def act25():
     pass
 
 def main():
-
     tuloy = True
     while tuloy == True:
-        print("Welcome to my Finals Program")
-        print("0 - exit")
-        print("1 - activity1")
+        print("\n\t\t---------------Welcome to my Finals Program---------------")
+        print("\t\t\t\t0 - exit")
+        print("\t\t\t\t1 - activity1")
 
-        x = input("enter a coms: ")
+        x = input("Enter a coms: ")
         if x == "exit" or x == "0":
             break
             tuloy == False
