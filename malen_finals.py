@@ -689,91 +689,152 @@ def code_challenge16():
 def main():
     tuloy = True
     while tuloy == True:
-        print("\n\t++++++++++++++ WELCOME TO MY FINALS PROJECT +++++++++++++++++")
+        print("\n\t+++++++++++++++++ WELCOME TO MY FINALS PROJECT +++++++++++++++++++++++")
         print("\n\t\t\t\tCODE CONTENT")
-        print("\n\tAct - Activities\t\t\tCC - Code_Challenges")
-        print("\t\t\t\t0 - Exit")
-        print("\n\t++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-
-        x = input("Enter what would you like to open: ")
+        print("\n\tAct - Activities\t\t\t\tCC - Code_Challenges")
+        print("\n\t0 - Exit")
+        print("\n\t++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+        
+        x = input("\n\tEnter what would you like to open: ")
         if x == "exit" or x == "0":
             break
             tuloy == False
-        else:
-            if x == "1":
-                act1()
-                continue
-            elif x == "2":
-                act2()
-                continue
-            elif x == "3":
-                act3()
-                continue
-            elif x == "4":
-                act4()
-                continue
-            elif x == "5":
-                act5()
-                continue
-            elif x == "6":
-                act6()
-                continue
-            elif x == "7":
-                act7()
-                continue
-            elif x == "8":
-                act8()
-                continue
-            elif x == "9":
-                act9()
-                continue
-            elif x == "10":
-                act10()
-                continue
-            elif x == "11":
-                act11()
-                continue
-            elif x == "12":
-                act12()
-                continue
-            elif x == "13":
-                act13()
-                continue
-            elif x == "14":
-                act14()
-                continue
-            elif x == "15":
-                act15()
-                continue
-            elif x == "16":
-                act16()
-                continue
-            elif x == "17":
-                act17()
-                continue
-            elif x == "18":
-                act18()
-                continue
-            elif x == "19":
-                act19()
-                continue
-            elif x == "20":
-                act20()
-                continue
-            elif x == "21":
-                act21()
-                continue
-            elif x == "22":
-                act22()
-                continue
-            elif x == "23":
-                act23()
-                continue
-            elif x == "24":
-                act24()
-                continue
-            elif x == "25":
-                act25()
-                continue       
-main()
+        elif x != "exit" or x != "0":
+            if x.lower() == "act":
+                while True:
+                    print("\n\t\t+++++++++++++ ACTIVITY +++++++++++++++")
+                    print("\n\t\t|Activity 1      |        Activity 16|")
+                    print("\t\t|Activity 2      |        Activity 17|")
+                    print("\t\t|Activity 3      |        Activity 18|")
+                    print("\t\t|Activity 4      |        Activity 19|")
+                    print("\t\t|Activity 5      |        Activity 20|")
+                    print("\t\t|Activity 6      |        Activity 21|")
+                    print("\t\t|Activity 7      |        Activity 22|")
+                    print("\t\t|Activity 8      |        Activity 23|")
+                    print("\t\t|Activity 9      |        Activity 24|")
+                    print("\t\t|Activity 10     |        Activity 25|")
+                    print("\t\t|Activity 11     |                   |")
+                    print("\t\t|Activity 12     |                   |")
+                    print("\t\t|Activity 13     |                   |")
+                    print("\t\t|Activity 14     |                   |")
+                    print("\t\t|Activity 15     |                   |")
+                    print("\t\t|0 to exit       |                   |")
+            
+                    com = input("\n\tWhich activity would you like to open: ")    
+                    if com == "0" or com == "exit":
+                        break
+                        
+                    elif com != "0" or com != "exit":
+                        if com == "a1":
+                            act1()
+                            continue
+                        elif com == "a2":
+                            act2()
+                            continue
+                        elif com == "a3":
+                            act3()
+                            continue
+                        elif com == "a4":
+                            act4()
+                            continue
+                        elif com == "a5":
+                            act5()
+                            continue
+                        elif com == "a6":
+                            act6()
+                            continue
+                        elif com == "a7":
+                            act7()
+                            continue
+                        elif com == "a8":
+                            act8()
+                            continue
+                        elif com == "a9":
+                            act9()
+                            continue
+                        elif com == "a10":
+                            act10()
+                            continue
+                        elif com == "a11":
+                            act11()
+                            continue
+                        elif com == "a12":
+                            act12()
+                            continue
+                        elif com == "a13":
+                            act13()
+                            continue
+                        elif com == "a14":
+                            act14()
+                            continue
+                        elif com == "a15":
+                            act15()
+                            continue
+                        elif com == "a16":
+                            act16()
+                            continue
+                        elif com == "a17":
+                            act17()
+                            continue
+                        elif com == "a18":
+                            act18()
+                            continue
+                        elif com == "a19":
+                            act19()
+                            continue
+                        elif com == "a20":
+                            act20()
+                            continue
+                        elif com == "a21":
+                            act21()
+                            continue
+                        elif com == "a22":
+                            act22()
+                            continue
+                        elif com == "a23":
+                            act23()
+                            continue
+                        elif com == "a24":
+                            act24()
+                            continue
+                        elif com == "a25":
+                            act25()
+                            continue       
 
+
+                        else:
+                            print("INVALID COMMAND")    
+            elif x.lower() == "cc":
+                while True:
+                    print("\n\t\t+++++++++++++ CODE CHALLENGE +++++++++++++++")
+                    print("\n\t\t|Code Challenge 1      |")
+                    print("\t\t|Code Challenge 2      |")
+                    print("\t\t|Code Challenge 3      |")
+                    print("\t\t|Code Challenge 4      |")
+                    print("\t\t|Code Challenge 5      |")
+                    print("\t\t|Code Challenge 6      |")
+                    print("\t\t|Code Challenge 7      |")
+                    print("\t\t|Code Challenge 8      |")
+                    print("\t\t|Code Challenge 9      |")
+                    print("\t\t|Code Challenge 10     |")
+                    print("\t\t|Code Challenge 11     |")
+                    print("\t\t|Code Challenge 12     |")
+                    print("\t\t|Code Challenge 13     |")
+                    print("\t\t|Code Challenge 14     |")
+                    print("\t\t|Code Challenge 15     |")
+                    print("\t\t|Code Challenge 16     |")
+                    print("\t\t|0 to exit       ")
+
+                    mand = input("Which Code Challenge would you like to open: ")
+                    if mand == "0" or mand == "exit":
+                        break
+
+                    elif mand != "0" or mand != "exit":
+                        if mand == "cc1":
+                            code_challenge1()
+                            continue
+
+                        else:
+                            print("INVALID COMMAND")  
+
+main()
