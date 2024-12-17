@@ -1,3 +1,4 @@
+import os
 def act1():
     print("Hello world")
 
@@ -284,16 +285,16 @@ def act25():
 
     print(courses)
 
-def code_challenge1():
+def code1():
     print ("\t\t\t\t\t\t\t\t\t   * \n\t\t\t\t\t\t\t\t\t  *** \n\t\t\t\t\t\t\t\t\t ***** \n\t\t\t\t\t\t\t\t\t******* \n\t\t\t\t\t\t\t\t\t ***** \n\t\t\t\t\t\t\t\t\t  *** \n\t\t\t\t\t\t\t\t\t   *")
 
-def code_challenge2():
+def code2():
     name = input("Please enter a name -----> ")
 
     print("Hi", name)
     print("\n\n\t\t\t\t\t\t\t\t\t\t\t*\n\t\t\t\t\t\t\t\t\t\t*\t*\t*\n\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\n\t\t\t\t\t\t\t\t*\t\t    ","Hi", name,"\t\t\t*\t\n\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\n\t\t\t\t\t\t\t\t\t\t*\t*\t*\n\t\t\t\t\t\t\t\t\t\t\t*\n\n")
 
-def code_challenge3():
+def code3():
     fullname = input("Please input your full name : ")
     gender = input("Input your Gender : ")
     age = input("Input your Age : ")
@@ -310,7 +311,7 @@ def code_challenge3():
 
     print("\nHi, My name is",fullname,"\b, an",age,"year old",gender,"\b,",status,"\b, born on",BirthMonth, BirthDay, BirthYear,"\b, living in",address,"\b.\nI am a",nationality,"citizen and a",religion,"\b.\nMy father's name is",fname,"and my mother's name is",mname,"\b.\nYou can reach me through gmail at",EmailAddress)
 
-def code_challenge4():
+def code4():
     num1 = eval(input("Enter a number ---> "))
     num2 = eval(input("Enter another number ---> "))
     sum = num1 + num2
@@ -329,7 +330,7 @@ def code_challenge4():
     print("The reminder of" , num1 , "and" , num2 , "is" ,rem)
     print("The floor division of" , num1 , "and" , num2 , "is" ,floordiv)
 
-def code_challenge5():
+def code5():
     pera = eval(input("Enter amount to deposit ---> "))
     name = input("Enter your name: ")
 
@@ -363,7 +364,7 @@ def code_challenge5():
     print(f," - 5")
     print(o," - 1")
 
-def code_challenge6():
+def code6():
     prelims = eval(input("Enter your Prelims score: "))
     midterm = eval(input("Enter your Midterm score: "))
     semi = eval(input("Enter your Semifinal score: "))
@@ -384,7 +385,7 @@ def code_challenge6():
     else:
         print("Invalid grades")
 
-def code_challenge7():
+def code7():
     name = input("Enter your name: ")
     age = input("Enter your age: ")
     gro = input("Do you want to buy? (yes or no): ")
@@ -409,7 +410,7 @@ def code_challenge7():
     else:
         print("Thanks for stopping buy!")
 
-def code_challenge8():
+def code8():
     x = 0
     odd = 0
     even = 0
@@ -425,7 +426,7 @@ def code_challenge8():
     print(f"The summation of the even numbers is: {even}")
     print(f"The summation of the odd numbers is: {odd}")
 
-def code_challenge9():
+def code9():
     for x in range(0,10):
         print(" ",end=" ")
         for y in range(0,x):
@@ -434,7 +435,7 @@ def code_challenge9():
             print("*",end=" ")
         print()
 
-def code_challenge10():
+def code10():
     for x in range(1,6):
         for y in range(6, x, -1):
             print(" ", end = " ")
@@ -453,7 +454,7 @@ def code_challenge10():
             print("*", end =" ")
         print()
 
-def code_challenge11():
+def code11():
     #arrow up
     for x in range (1, 5):
         for y in range(5, x, -1):
@@ -474,7 +475,7 @@ def code_challenge11():
             print("*", end=" ")    
         print()
 
-def code_challenge12():
+def code12():
     for x in range (1,6):
         for y in range(6, x, -1):
             print(" ", end=" ")
@@ -499,7 +500,7 @@ def code_challenge12():
         for k in range(1,4):
             print("*",end=" ")
         print()
-def code_challenge13():
+def code13():
     for i in range(1,6):
         for j in range(6,i,-1):
             print(" ",end= " " )
@@ -522,7 +523,7 @@ def code_challenge13():
             print(l, end= " ")
         print()
 
-def code_challenge14():
+def code14():
     cycle = True
     sum = 0
 
@@ -538,7 +539,7 @@ def code_challenge14():
             sum += num
             continue
 
-def code_challenge15():
+def code15():
     import os
     isContinue = True 
     no = 0
@@ -562,7 +563,7 @@ def code_challenge15():
                 print()
             continue
 
-def code_challenge16():
+def code16():
     def denomination(amount):
         print("\nDenomination Breakdown:")
         A = amount // 1000
@@ -689,6 +690,7 @@ def code_challenge16():
 def main():
     tuloy = True
     while tuloy == True:
+        #This is a compilation of activities and code challenges
         print("\n\t+++++++++++++++++ WELCOME TO MY FINALS PROJECT +++++++++++++++++++++++")
         print("\n\t\t\t\tCODE CONTENT")
         print("\n\tAct - Activities\t\t\t\tCC - Code_Challenges")
@@ -700,138 +702,350 @@ def main():
             break
             tuloy == False
         elif x != "exit" or x != "0":
+            os.system("cls")
             if x.lower() == "act":
                 while True:
-                    print("\n\t\t+++++++++++++ ACTIVITY +++++++++++++++")
-                    print("\n\t\t|Activity 1      |        Activity 16|")
-                    print("\t\t|Activity 2      |        Activity 17|")
-                    print("\t\t|Activity 3      |        Activity 18|")
-                    print("\t\t|Activity 4      |        Activity 19|")
-                    print("\t\t|Activity 5      |        Activity 20|")
-                    print("\t\t|Activity 6      |        Activity 21|")
-                    print("\t\t|Activity 7      |        Activity 22|")
-                    print("\t\t|Activity 8      |        Activity 23|")
-                    print("\t\t|Activity 9      |        Activity 24|")
-                    print("\t\t|Activity 10     |        Activity 25|")
-                    print("\t\t|Activity 11     |                   |")
-                    print("\t\t|Activity 12     |                   |")
-                    print("\t\t|Activity 13     |                   |")
-                    print("\t\t|Activity 14     |                   |")
-                    print("\t\t|Activity 15     |                   |")
-                    print("\t\t|0 to exit       |                   |")
+                    print("\n\n\t\t\t+++++++++++++ ACTIVITY +++++++++++++++")
+                    print("\n\t\t|a1 - Activity 1          |        a16 - Activity 16|")
+                    print("\t\t|a2 - Activity 2          |        a17 - Activity 17|")
+                    print("\t\t|a3 - Activity 3          |        a18 - Activity 18|")
+                    print("\t\t|a4 - Activity 4          |        a19 - Activity 19|")
+                    print("\t\t|a5 - Activity 5          |        a20 - Activity 20|")
+                    print("\t\t|a6 - Activity 6          |        a21 - Activity 21|")
+                    print("\t\t|a7 - Activity 7          |        a22 - Activity 22|")
+                    print("\t\t|a8 - Activity 8          |        a23 - Activity 23|")
+                    print("\t\t|a9 - Activity 9          |        a24 - Activity 24|")
+                    print("\t\t|a10 - Activity 10        |        a25 - Activity 25|")
+                    print("\t\t|a11 - Activity 11        |                         |")
+                    print("\t\t|a12 - Activity 12        |                         |")
+                    print("\t\t|a13 - Activity 13        |                         |")
+                    print("\t\t|a14 - Activity 14        |                         |")
+                    print("\t\t|a15 - Activity 15        |                         |")
+                    print("\t\t|0   - BACK               |                         |")
             
                     com = input("\n\tWhich activity would you like to open: ")    
                     if com == "0" or com == "exit":
+                        os.system("cls")
                         break
                         
                     elif com != "0" or com != "exit":
-                        if com == "a1":
+                        if com.lower() == "a1":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 1\n")
                             act1()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a2":
+                        elif com.lower() == "a2":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 2\n")
                             act2()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a3":
+                        elif com.lower() == "a3":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 3\n")
                             act3()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a4":
+                        elif com.lower() == "a4":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 4\n")
                             act4()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a5":
+                        elif com.lower() == "a5":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 5\n")
                             act5()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a6":
+                        elif com.lower() == "a6":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 6\n")
                             act6()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a7":
+                        elif com.lower() == "a7":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 7\n")
                             act7()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a8":
+                        elif com.lower() == "a8":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 8\n")
                             act8()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a9":
+                        elif com.lower() == "a9":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 9\n")
                             act9()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a10":
+                        elif com.lower() == "a10":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 10\n")
                             act10()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a11":
+                        elif com.lower() == "a11":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 11\n")
                             act11()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a12":
+                        elif com.lower() == "a12":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 12\n")
                             act12()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a13":
+                        elif com.lower() == "a13":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 13\n")
                             act13()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a14":
+                        elif com.lower() == "a14":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 14\n")
                             act14()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a15":
+                        elif com.lower() == "a15":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 15\n")
                             act15()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a16":
+                        elif com.lower() == "a16":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 16\n")
                             act16()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a17":
+                        elif com.lower() == "a17":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 17\n")
                             act17()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a18":
+                        elif com.lower() == "a18":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 18\n")
                             act18()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a19":
+                        elif com.lower() == "a19":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 19\n")
                             act19()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a20":
+                        elif com.lower() == "a20":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 20\n")
                             act20()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a21":
+                        elif com.lower() == "a21":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 21\n")
                             act21()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a22":
+                        elif com.lower() == "a22":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 22\n")
                             act22()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a23":
+                        elif com.lower() == "a23":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 23\n")
                             act23()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a24":
+                        elif com.lower() == "a24":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 24\n")
                             act24()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
-                        elif com == "a25":
+                        elif com.lower() == "a25":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("ACTIVITY 25\n")
                             act25()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++\n")
                             continue       
-
 
                         else:
                             print("INVALID COMMAND")    
+                            
             elif x.lower() == "cc":
                 while True:
-                    print("\n\t\t+++++++++++++ CODE CHALLENGE +++++++++++++++")
-                    print("\n\t\t|Code Challenge 1      |")
-                    print("\t\t|Code Challenge 2      |")
-                    print("\t\t|Code Challenge 3      |")
-                    print("\t\t|Code Challenge 4      |")
-                    print("\t\t|Code Challenge 5      |")
-                    print("\t\t|Code Challenge 6      |")
-                    print("\t\t|Code Challenge 7      |")
-                    print("\t\t|Code Challenge 8      |")
-                    print("\t\t|Code Challenge 9      |")
-                    print("\t\t|Code Challenge 10     |")
-                    print("\t\t|Code Challenge 11     |")
-                    print("\t\t|Code Challenge 12     |")
-                    print("\t\t|Code Challenge 13     |")
-                    print("\t\t|Code Challenge 14     |")
-                    print("\t\t|Code Challenge 15     |")
-                    print("\t\t|Code Challenge 16     |")
-                    print("\t\t|0 to exit       ")
+                    print("\n\n\t\t+++++++++++++ CODE CHALLENGE +++++++++++++++")
+                    print("\n\t\t|cc1 - Code Challenge 1      |")
+                    print("\t\t|cc2 - Code Challenge 2      |")
+                    print("\t\t|cc3 - Code Challenge 3      |")
+                    print("\t\t|cc4 - Code Challenge 4      |")
+                    print("\t\t|cc5 - Code Challenge 5      |")
+                    print("\t\t|cc6 - Code Challenge 6      |")
+                    print("\t\t|cc7 - Code Challenge 7      |")
+                    print("\t\t|cc8 - Code Challenge 8      |")
+                    print("\t\t|cc9 - Code Challenge 9      |")
+                    print("\t\t|cc10 - Code Challenge 10    |")
+                    print("\t\t|cc11 - Code Challenge 11    |")
+                    print("\t\t|cc12 - Code Challenge 12    |")
+                    print("\t\t|cc13 - Code Challenge 13    |")
+                    print("\t\t|cc14 - Code Challenge 14    |")
+                    print("\t\t|cc15 - Code Challenge 15    |")
+                    print("\t\t|cc16 - Code Challenge 16    |")
+                    print("\t\t|0    - BACK                 |")
 
                     mand = input("Which Code Challenge would you like to open: ")
                     if mand == "0" or mand == "exit":
+                        os.system("cls")
                         break
 
                     elif mand != "0" or mand != "exit":
-                        if mand == "cc1":
-                            code_challenge1()
+                        if mand.lower() == "cc1":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 1")
+                            code1()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc2":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 2\n")
+                            code2()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc3":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 3\n")
+                            code3()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc4":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 4\n")
+                            code4()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc5":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 5\n")
+                            code5()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc6":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 6\n")
+                            code6()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc7":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 7\n")
+                            code7()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc8":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 8\n")
+                            code8()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc9":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 9\n")
+                            code9()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc10":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 10\n")
+                            code10()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc11":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 11\n")
+                            code11()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc12":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 12\n")
+                            code12()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc13":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 13\n")
+                            code13()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc14":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 14\n")
+                            code14()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc15":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 15\n")
+                            code15()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            continue
+                        elif mand.lower() == "cc16":
+                            os.system("cls")
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                            print("CODE CHALLENGE 16\n")
+                            code16()
+                            print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
                             continue
 
                         else:
