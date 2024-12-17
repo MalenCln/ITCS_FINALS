@@ -699,13 +699,23 @@ def main():
         
         x = input("\n\tEnter what would you like to open: ")
         if x == "exit" or x == "0":
-            break
-            tuloy == False
+            done = input("\n\tAre you sure you want to exit the program (yes/no)? ")
+            if done.lower() == "yes":
+                print("\n\t\t\tTHANK YOU FOR USING THE PROGRAM")
+                break
+            elif done.lower() == "no":
+                print("\n\t\t\tYou may proceed in using the program")
+                continue
+
+            else:
+                print("\tInvalid command, Try again")
+                # continue
+                
         elif x != "exit" or x != "0":
             os.system("cls")
             if x.lower() == "act":
                 while True:
-                    print("\n\n\t\t\t+++++++++++++ ACTIVITY +++++++++++++++")
+                    print("\n\n\t\t+++++++++++++++++++++ ACTIVITY ++++++++++++++++++++++")
                     print("\n\t\t|a1 - Activity 1          |        a16 - Activity 16|")
                     print("\t\t|a2 - Activity 2          |        a17 - Activity 17|")
                     print("\t\t|a3 - Activity 3          |        a18 - Activity 18|")
@@ -906,11 +916,11 @@ def main():
                             continue       
 
                         else:
-                            print("INVALID COMMAND")    
+                            print("\n\t\t\t\tINVALID COMMAND") 
                             
             elif x.lower() == "cc":
                 while True:
-                    print("\n\n\t\t+++++++++++++ CODE CHALLENGE +++++++++++++++")
+                    print("\n\n\t\t+++++++ CODE CHALLENGE +++++++")
                     print("\n\t\t|cc1 - Code Challenge 1      |")
                     print("\t\t|cc2 - Code Challenge 2      |")
                     print("\t\t|cc3 - Code Challenge 3      |")
@@ -929,7 +939,7 @@ def main():
                     print("\t\t|cc16 - Code Challenge 16    |")
                     print("\t\t|0    - BACK                 |")
 
-                    mand = input("Which Code Challenge would you like to open: ")
+                    mand = input("\nWhich Code Challenge would you like to open: ")
                     if mand == "0" or mand == "exit":
                         os.system("cls")
                         break
@@ -1049,6 +1059,6 @@ def main():
                             continue
 
                         else:
-                            print("INVALID COMMAND")  
+                            print("\n\t\t\tINVALID COMMAND") 
 
 main()
