@@ -692,7 +692,7 @@ def main():
     while tuloy == True:
         #This is a compilation of activities and code challenges
         print("\n\t+++++++++++++++++ WELCOME TO MY FINALS PROJECT +++++++++++++++++++++++")
-        print("\n\t\t\t\tCODE CONTENT")
+        print("\n\t\t\t\tPROJECT CONTENT")
         print("\n\tAct - Activities\t\t\t\tCC - Code_Challenges")
         print("\n\t0 - Exit")
         print("\n\t++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
@@ -732,13 +732,14 @@ def main():
                     print("\t\t|a14 - Activity 14        |                         |")
                     print("\t\t|a15 - Activity 15        |                         |")
                     print("\t\t|0   - BACK               |                         |")
+                    print("\n\t\t+++++++++++++++++++++++++++++++++++++++++++++++++++++")
             
                     com = input("\n\tWhich activity would you like to open: ")    
-                    if com == "0" or com == "exit":
+                    if com == "0" or com == "back":
                         os.system("cls")
                         break
                         
-                    elif com != "0" or com != "exit":
+                    elif com != "0" or com != "back":
                         if com.lower() == "a1":
                             os.system("cls")
                             print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
@@ -938,13 +939,14 @@ def main():
                     print("\t\t|cc15 - Code Challenge 15    |")
                     print("\t\t|cc16 - Code Challenge 16    |")
                     print("\t\t|0    - BACK                 |")
+                    print("\n\t\t++++++++++++++++++++++++++++++")
 
                     mand = input("\nWhich Code Challenge would you like to open: ")
-                    if mand == "0" or mand == "exit":
+                    if mand == "0" or mand == "back":
                         os.system("cls")
                         break
 
-                    elif mand != "0" or mand != "exit":
+                    elif mand != "0" or mand != "back":
                         if mand.lower() == "cc1":
                             os.system("cls")
                             print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
